@@ -263,8 +263,8 @@ Semblanza y Loa de Francisco,https://www.ufm.edu/images/0/0e/Loa_Fco_Marroquin.p
 Tarifario 2019,/Tarifario_2019
 Valores,/Valores
 Virtudes,/Virtudes
-UFMail,https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=753553871119-42rgfeitjhbrq449nj1906662pupr1j0.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.ufm.edu%2Fautenticacion%2Foauth2_init.php&state=ceeba0545d2bdbbac3004c4d5ade117c&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=auto&hd=ufm.edu
-MiU,https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=offline&client_id=514583071787-mcsoogoa3kb7v56n7r78obvusehc81br.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fmiu.ufm.edu%2Findex.php&state=1b280a1d96a03799c025a06e2219aac0&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=force&hd=ufm.edu&login_hint=ejemplo%40ufm.edu
+UFMail,https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=753553871119-42rgfeitjhbrq449nj1906662pupr1j0.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.ufm.edu%2Fautenticacion%2Foauth2_init.php&state=43c2942b630b35559c3cc622e1061945&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=auto&hd=ufm.edu
+MiU,https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=offline&client_id=514583071787-mcsoogoa3kb7v56n7r78obvusehc81br.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fmiu.ufm.edu%2Findex.php&state=4b1633a1d8cdc7b3ce15e43bc8615dd1&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=force&hd=ufm.edu&login_hint=ejemplo%40ufm.edu
 UFM Key Projects,https://www.ufm.edu/english/
 Friends of UFM,https://foufm.org
 Donaciones,https://www.ufm.edu/checkout/donaciones/
@@ -274,12 +274,12 @@ Alumni,https://alumni.ufm.edu/
 Campus Madrid,https://madrid.ufm.edu/?referer=ufm
  Redes Sociales,/Redes_Sociales
 El Amigo de la Marro,https://noticias.ufm.edu
+,https://noticias.ufm.edu/medicina-ufm-celebro-xv-aniversario-del-centro-de-salud-barbara/
 ,https://noticias.ufm.edu/participa-en-la-alumni-fest-en-la-ufm/
 ,https://noticias.ufm.edu/nixon-sucuc-gano-tercer-lugar-en-concurso-internacional-de-ensayo/
-,https://noticias.ufm.edu/participa-en-la-pitch-competition-de-la-fce/
+Medicina UFM celebró XV aniversario del Centro de Salud Bárbara,https://noticias.ufm.edu/medicina-ufm-celebro-xv-aniversario-del-centro-de-salud-barbara/
 ¡Participa en el Alumni Fest UFM!,https://noticias.ufm.edu/participa-en-la-alumni-fest-en-la-ufm/
 Nixon Sucuc ganó tercer lugar en concurso internacional de ensayo,https://noticias.ufm.edu/nixon-sucuc-gano-tercer-lugar-en-concurso-internacional-de-ensayo/
-¡Participa en la Pitch Competition de la FCE!,https://noticias.ufm.edu/participa-en-la-pitch-competition-de-la-fce/
 Eventos,https://asomate.ufm.edu
 ,https://asomate.ufm.edu/event/curso-libre-conceptos-clave-pensamiento-tocqueville/
 ,https://asomate.ufm.edu/event/las-mujeres-arte-guatemalteco/

@@ -2,7 +2,7 @@
 from bs4 import BeautifulSoup
 import requests,sys,csv,json
 
-logs = open("logs/logs.txt", "w")
+logs = open("logs/logs.txt", "w+")
 logs.seek(0)
 logs.truncate()
 url="http://ufm.edu/Portal"
@@ -50,7 +50,7 @@ for y in soup.find_all('img'):
 a = soup.find_all('a')
 print("\nThere's a total of {} <a>".format(len(a)))
 
-with open('as.csv', 'w') as writeFile:
+with open('as.csv', 'w+') as writeFile:
     writer = csv.writer(writeFile)
     for z in a:
         row = [z.get_text(), z['href']]
