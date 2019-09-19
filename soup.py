@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from bs4 import BeautifulSoup
-import requests,sys,csv,json
+import requests,sys,csv,json,re
 
 logs = open("logs/logs.txt", "w+")
 logs.seek(0)
@@ -57,7 +57,7 @@ with open('as.csv', 'w+') as writeFile:
         row = [z.get_text(), z['href']]
         writer.writerow(row)
 
-writeFile.close()
+
 logs.close()
 
 print("\n============================= \n2. Estudios \n")
@@ -98,3 +98,46 @@ print("\nThere's a total of {} <div>".format(len(div)))
 
 print("\n{}".format(soup.find('meta', property='og:type')))
 print("\n{}".format(soup.find('meta', property='og:title')))
+
+
+print("\n============================= \n4. Directorio \n")
+
+url_directorio = url + "/Directorio"
+html_content = requests.get(url_directorio).text
+soup = BeautifulSoup(html_content, 'lxml')
+mails = []
+for x in soup.find(id="mw-content-text").find_all("a", href=re.compile("mailto")):
+    mails.append(x.get('href'))
+mails.sort()
+
+with open('logs/4directorio_emails.txt', 'w+') as emails:
+    for item in mails:
+        emails.write('%s\n' % item)
+emails.close()
+
+vocales = 0
+for item in mails:
+    if item[7] in ('a','e','i','o','u'):
+        vocales += 1
+print("La cantidad de correos que inician con vocal son: {}".format(vocales))
+
+direcciones = {}
+pairs = []
+for x in soup.find_all('tr'):
+    if len(x.contents) == 10:
+        pares = []
+        p = x.contents[9].get_text().strip().split(',')[0]
+        q = x.contents[1].get_text().strip()
+        pares.append(p)
+        pares.append(q)
+        pairs.append(pares)
+
+for x in pairs:
+    direcciones[x[0]] = []
+for x in pairs:
+    for key, value in direcciones.items():
+        if key == x[0]:
+            direcciones[key].append(x[1])
+
+with open('logs/4directorio_address.json', 'w+') as f:
+        json.dump(direcciones, f)
