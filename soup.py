@@ -28,11 +28,11 @@ print("{} \n".format(soup.find('a', href="#myModal").get_text()))
 print("{}".format(soup.find('a', href="tel:+50223387700").get_text()))
 
 for x in soup.find_all('div', class_='menu-key'): 
-    print("\n", x.get_text(strip=True))
+    print("\n{}".format(x.get_text(strip=True)))
 
 if len(soup.find_all(href=True)) <= 30:
     for x in soup.find_all(href=True): 
-        print("\n", x['href'])
+        print("\n{}".format(x['href']))
 else:
     print("\nOutput exceeds 30 lines, it can be found on logs/logs.txt")
     for x in soup.find_all(href=True):
@@ -44,3 +44,19 @@ else:
 print("\n{}".format(soup.find(id="ufmail_")['href']))
 
 print("\n{}".format(soup.find(id="miu_")['href']))
+
+for y in soup.find_all('img'):
+    print('\n{}'.format(y['src']))
+a = soup.find_all('a')
+print("\nThere's a total of {} <a>".format(len(a)))
+
+with open('as.csv', 'w') as writeFile:
+    writer = csv.writer(writeFile)
+    for z in a:
+        row = [z.get_text(), z['href']]
+        writer.writerow(row)
+
+writeFile.close()
+logs.close()
+        
+    
