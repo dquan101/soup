@@ -96,4 +96,5 @@ print("\nThere's a total of {} <a>".format(len(a)))
 div = soup.find_all('div')
 print("\nThere's a total of {} <div>".format(len(div)))
 
-
+print("\n{}".format(soup.find('meta', property='og:type')))
+print("\n{}".format(soup.find('meta', property='og:title')))
