@@ -5,10 +5,11 @@ import requests,sys,csv,json
 logs = open("logs/logs.txt", "w+")
 logs.seek(0)
 logs.truncate()
-url="http://ufm.edu/Portal"
+url="http://ufm.edu"
+url_portal = url + "/Portal"
 # Make a GET request to fetch the raw HTML content
 try:
-    html_content = requests.get(url).text
+    html_content = requests.get(url_portal).text
 except:
     print(f"unable to get {url}")
     sys.exit(1)
@@ -58,5 +59,41 @@ with open('as.csv', 'w+') as writeFile:
 
 writeFile.close()
 logs.close()
-        
-    
+
+print("\n============================= \n2. Estudios \n")
+
+url_estudios = url + soup.find(href="/Estudios")['href']
+html_content = requests.get(url_estudios).text
+soup = BeautifulSoup(html_content, 'lxml')
+for string in soup.find(id="topmenu").stripped_strings:
+    print(string)
+print("\n")
+for x in soup.find_all('div', class_='estudios'):
+    print(x.get_text())
+print("\n")
+for x in soup.find(class_='leftbar').find_all('li'):
+    print(x.get_text())
+print("\n")
+for x in soup.find(class_='social pull-right').find_all('a'):
+    print(x.get('href'))
+
+a = soup.find_all('a')
+print("\nThere's a total of {} <a>".format(len(a)))
+
+url_cs = "https://fce.ufm.edu/carrera/cs/"
+html_content = requests.get(url_cs).text
+soup = BeautifulSoup(html_content, 'lxml')
+print("\n============================= \n3. CS \n")
+print("{} \n".format(soup.title.string))
+
+logo = soup.find(href='https://fce.ufm.edu').find('img').get('src')
+image = requests.get(logo, allow_redirects=True)
+open('logo_ufm.png', 'wb').write(image.content)
+
+a = soup.find_all('a')
+print("\nThere's a total of {} <a>".format(len(a)))
+
+div = soup.find_all('div')
+print("\nThere's a total of {} <div>".format(len(div)))
+
+
