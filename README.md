@@ -310,7 +310,7 @@ In order to start your project:
 ```bash
 run all by using: docker run diegoquan101/soup:final
 run sections by passing arguments from 1 to 4:
-ex: docker run diegoquan101/soup:final
+ex: docker run diegoquan101/soup:final 2
 ```
 
 ---
