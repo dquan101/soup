@@ -263,8 +263,8 @@ Semblanza y Loa de Francisco,https://www.ufm.edu/images/0/0e/Loa_Fco_Marroquin.p
 Tarifario 2019,/Tarifario_2019
 Valores,/Valores
 Virtudes,/Virtudes
-UFMail,https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=753553871119-42rgfeitjhbrq449nj1906662pupr1j0.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.ufm.edu%2Fautenticacion%2Foauth2_init.php&state=ba2c28cc77e04ecde5a3ce742026dd02&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=auto&hd=ufm.edu
-MiU,https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=offline&client_id=514583071787-mcsoogoa3kb7v56n7r78obvusehc81br.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fmiu.ufm.edu%2Findex.php&state=da26115032118577869998c80e7c13fc&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=force&hd=ufm.edu&login_hint=ejemplo%40ufm.edu
+UFMail,https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=online&client_id=753553871119-42rgfeitjhbrq449nj1906662pupr1j0.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.ufm.edu%2Fautenticacion%2Foauth2_init.php&state=706f0e3ac4d7d1a194af674dd6f4a66a&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=auto&hd=ufm.edu
+MiU,https://accounts.google.com/o/oauth2/auth?response_type=code&access_type=offline&client_id=514583071787-mcsoogoa3kb7v56n7r78obvusehc81br.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fmiu.ufm.edu%2Findex.php&state=5e4ba2fc1d272f8cedaed90f04a36958&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&approval_prompt=force&hd=ufm.edu&login_hint=ejemplo%40ufm.edu
 UFM Key Projects,https://www.ufm.edu/english/
 Friends of UFM,https://foufm.org
 Donaciones,https://www.ufm.edu/checkout/donaciones/

@@ -15,7 +15,7 @@ except:
     sys.exit(1)
 
 # Parse the html content, this is the Magic ;)
-soup = BeautifulSoup(html_content, "lxml")
+soup = BeautifulSoup(html_content, 'html.parser')
 
 # print if needed, gets too noisy
 #print(soup.prettify())
@@ -64,7 +64,7 @@ def Estudios(soup):
 
     url_estudios = url + soup.find(href="/Estudios")['href']
     html_content = requests.get(url_estudios).text
-    soup = BeautifulSoup(html_content, 'lxml')
+    soup = BeautifulSoup(html_content, 'html.parser')
     for string in soup.find(id="topmenu").stripped_strings:
         print(string)
     print("\n")
@@ -85,7 +85,7 @@ def Carrera(soup):
 
     url_cs = "https://fce.ufm.edu/carrera/cs/"
     html_content = requests.get(url_cs).text
-    soup = BeautifulSoup(html_content, 'lxml')
+    soup = BeautifulSoup(html_content, 'html.parser')
 
     print("\n============================= \n3. CS \n")
     print("{} \n".format(soup.title.string))
@@ -109,7 +109,7 @@ def Directorio():
 
     url_directorio = url + "/Directorio"
     html_content = requests.get(url_directorio).text
-    soup = BeautifulSoup(html_content, 'lxml')
+    soup = BeautifulSoup(html_content, 'html.parser')
     mails = []
     for x in soup.find(id="mw-content-text").find_all("a", href=re.compile("mailto")):
         mails.append(x.get('href'))
