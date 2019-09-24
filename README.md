@@ -307,7 +307,7 @@ In order to start your project:
 - [x] everytime you complete an "item" make sure to mark it as done [x]
 
 ## Usage Dockerfile
-Image is uploaded on DockerHub. It can be found on this repo: https://cloud.docker.com/repository/docker/diegoquan101/soup/general \n
+Image is uploaded on DockerHub. It can be found on this repo: https://cloud.docker.com/repository/docker/diegoquan101/soup/general
 
 All you need to run it are the following commands:
 ```bash
